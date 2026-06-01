@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 const VIDEO_SRC =
-  'https://www.youtube.com/embed/LKNVQSMiC8o?si=Stfztu0YHtWtQJfF&autoplay=1&rel=0';
+  'https://www.youtube.com/embed/uc5Cpz4WM1s?si=Ofr0glT6nK4sU1Js&autoplay=1&rel=0';
 
 export default function VideoModal({ open, onClose }) {
   useEffect(() => {
