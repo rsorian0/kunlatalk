@@ -731,7 +731,6 @@
   }
   @media(max-width:760px){
     .stats{padding:40px 28px;margin:48px 0;border-radius:24px}
-    .stats-grid{grid-template-columns:1fr;gap:32px}
   }
   .stats::before{
     content:'';
@@ -749,7 +748,7 @@
     z-index:1;
   }
   @media(max-width:760px){
-    .stats-grid{gap:32px}
+    .stats-grid{grid-template-columns:1fr;gap:32px}
   }
   .stat-num{
     font-size:clamp(2.5rem,5vw,4rem);
