@@ -1,0 +1,270 @@
+<!-- =================== NAV =================== -->
+
+
+<!-- =================== PAGE HERO =================== -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="/">Início</a>
+        <span class="sep">/</span>
+        <span class="current">Segurança</span>
+      </div>
+      <span class="label">— Segurança da informação</span>
+      <h1>Construída em <span class="gradient">fundações sérias.</span></h1>
+      <p class="subtitle">Como protegemos a infraestrutura, os dados e as operações da Kunlatalk. Documentação técnica detalhada sobre nossos provedores, controles, políticas de retenção e resposta a incidentes.</p>
+      <div class="meta-info">
+        <div>
+          <strong>Última atualização</strong>
+          <span>27 de maio de 2026</span>
+        </div>
+        <div>
+          <strong>Versão</strong>
+          <span>1.0</span>
+        </div>
+        <div>
+          <strong>Conformidade</strong>
+          <span>LGPD · Meta · WhatsApp</span>
+        </div>
+        <div>
+          <strong>Contato</strong>
+          <span>contato@kunlatek.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== TOC =================== -->
+<section class="toc-section">
+  <div class="container">
+    <div class="toc-wrap">
+      <h2>— Índice</h2>
+      <ol class="toc-list">
+        <li><a href="#principios">Princípios de segurança</a></li>
+        <li><a href="#infra">Infraestrutura e provedores</a></li>
+        <li><a href="#meta">API oficial Meta (WhatsApp Business)</a></li>
+        <li><a href="#deepseek">DeepSeek como motor de IA</a></li>
+        <li><a href="#mongodb">MongoDB como camada de dados</a></li>
+        <li><a href="#titularidade">Titularidade das contas pelo cliente</a></li>
+        <li><a href="#criptografia">Criptografia e proteção em trânsito e em repouso</a></li>
+        <li><a href="#acesso">Controle de acesso e autenticação</a></li>
+        <li><a href="#retencao">Retenção e exclusão de dados</a></li>
+        <li><a href="#monitoramento">Monitoramento e auditoria</a></li>
+        <li><a href="#incidentes">Resposta a incidentes</a></li>
+        <li><a href="#vulnerabilidades">Comunicação de vulnerabilidades</a></li>
+        <li><a href="#contato">Contato do time de segurança</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTENT =================== -->
+<section class="content">
+  <div class="container">
+    <div class="content-inner">
+
+      <section id="principios">
+        <h2><span class="num">01</span> Princípios de segurança</h2>
+        <p class="lead">Segurança não é uma camada que adicionamos no fim. É um critério arquitetural que orienta todas as decisões da Kunlatalk desde a primeira linha de código.</p>
+        <p>Operamos sobre quatro princípios:</p>
+        <ul>
+          <li><strong>Soberania do cliente.</strong> Dados, infraestrutura e credenciais ficam sob titularidade direta do cliente — não sob a nossa.</li>
+          <li><strong>Provedores homologados.</strong> Usamos exclusivamente APIs oficiais (Meta, DeepSeek, MongoDB). Sem soluções não-homologadas, sem gambiarras, sem riscos de bloqueio.</li>
+          <li><strong>Princípio do menor privilégio.</strong> Cada componente, integração e pessoa só acessa o estritamente necessário para sua função.</li>
+          <li><strong>Defesa em profundidade.</strong> Múltiplas camadas independentes de proteção — para que a falha em uma não comprometa o conjunto.</li>
+        </ul>
+      </section>
+
+      <section id="infra">
+        <h2><span class="num">02</span> Infraestrutura e provedores</h2>
+        <p>A Kunlatalk opera sobre três fornecedores principais, cada um respondendo por uma camada distinta da operação:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Camada</th>
+                <th>Provedor</th>
+                <th>Função</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Canal de comunicação</td>
+                <td>Meta Platforms, Inc.</td>
+                <td>WhatsApp Business Platform via Cloud API oficial</td>
+              </tr>
+              <tr>
+                <td>Inteligência artificial</td>
+                <td>DeepSeek</td>
+                <td>Motor de IA generativa para condução das conversas</td>
+              </tr>
+              <tr>
+                <td>Persistência de dados</td>
+                <td>MongoDB</td>
+                <td>Banco de dados de histórico, contexto e configuração</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Cada provedor mantém certificações e controles próprios. Atuamos como integradora — não substituímos nem reempacotamos esses serviços. O cliente final mantém relação contratual direta com cada fornecedor.</p>
+      </section>
+
+      <section id="meta">
+        <h2><span class="num">03</span> API oficial Meta (WhatsApp Business)</h2>
+        <p>Toda a comunicação no WhatsApp acontece exclusivamente via <strong>Cloud API oficial</strong> da Meta Platforms, sob a WhatsApp Business Platform.</p>
+        <p>O que isso garante na prática:</p>
+        <ul>
+          <li><strong>Criptografia ponta a ponta nativa</strong> entre o titular e a infraestrutura Meta para todas as mensagens em trânsito.</li>
+          <li><strong>Conformidade com as Políticas Comerciais do WhatsApp</strong>, garantindo que a conta opera dentro das regras da plataforma — sem risco de bloqueio por uso não autorizado.</li>
+          <li><strong>Aderência à Política de Mensagens Comerciais</strong> e aos Termos da WhatsApp Business Solution.</li>
+          <li><strong>Sem soluções não-homologadas</strong>: não usamos automações via WhatsApp Web, web scraping ou qualquer outra técnica que viole os termos da plataforma.</li>
+        </ul>
+        <p>A conta WABA (WhatsApp Business Account) é configurada em nome do cliente contratante e fica sob sua titularidade.</p>
+      </section>
+
+      <section id="deepseek">
+        <h2><span class="num">04</span> DeepSeek como motor de IA</h2>
+        <p>A inteligência conversacional da atendente é fornecida pelo <strong>DeepSeek</strong>, acessado via API oficial. Não treinamos modelos com dados de clientes, e não enviamos dados para terceiros além do necessário para produzir cada resposta.</p>
+        <p>Sobre o uso:</p>
+        <ul>
+          <li>As chamadas à API DeepSeek são feitas <strong>sob a conta do próprio cliente</strong> — sem markup, sem intermediação financeira da Kunlatek.</li>
+          <li>O contexto enviado em cada interação é o estritamente necessário para a próxima resposta da atendente. Não enviamos dados de outros clientes, históricos não relacionados ou informações sensíveis fora de contexto.</li>
+          <li>O cliente pode auditar diretamente o consumo e o tráfego de sua conta DeepSeek.</li>
+          <li>Trocas de provedor de IA são tecnicamente possíveis caso o cliente prefira outra opção. O DeepSeek é o padrão por seu equilíbrio entre custo e qualidade em português.</li>
+        </ul>
+      </section>
+
+      <section id="mongodb">
+        <h2><span class="num">05</span> MongoDB como camada de dados</h2>
+        <p>Histórico de conversas, configuração da atendente, cadastros de leads e dados operacionais ficam armazenados em <strong>MongoDB</strong>, configurado sob a conta do cliente — tipicamente no MongoDB Atlas em região geográfica escolhida pelo cliente.</p>
+        <p>Características principais:</p>
+        <ul>
+          <li><strong>Titularidade direta:</strong> a instância MongoDB é provisionada e contratada em nome do cliente. A Kunlatek apenas configura o esquema, mantém a integração e ajuda na operação — mas o banco pertence ao cliente.</li>
+          <li><strong>Criptografia em repouso:</strong> todos os dados são criptografados em disco pelo próprio MongoDB Atlas, usando AES-256.</li>
+          <li><strong>Criptografia em trânsito:</strong> todas as conexões com o banco usam TLS 1.2 ou superior.</li>
+          <li><strong>Backups automáticos:</strong> snapshots periódicos configurados conforme a política de backup escolhida pelo cliente.</li>
+          <li><strong>Soberania regional:</strong> o cliente escolhe a região geográfica do banco. Recomendamos São Paulo (sa-east-1) por padrão para clientes brasileiros, mantendo os dados em território nacional.</li>
+        </ul>
+      </section>
+
+      <section id="titularidade">
+        <h2><span class="num">06</span> Titularidade das contas pelo cliente</h2>
+        <p class="lead">Esta é uma das decisões arquiteturais mais importantes da Kunlatalk: o cliente é dono de tudo.</p>
+        <p>Na operação típica, o cliente abre e mantém sob sua titularidade direta:</p>
+        <ul>
+          <li>A conta Meta Business (Business Manager) e a conta WhatsApp Business (WABA).</li>
+          <li>A conta DeepSeek e a respectiva chave de API.</li>
+          <li>A conta MongoDB Atlas e a instância de banco de dados.</li>
+        </ul>
+        <p>A Kunlatek atua como integradora técnica, configurando a infraestrutura e mantendo a operação — mas sem se interpor entre o cliente e seus fornecedores. Isso elimina riscos de aprisionamento, garante auditabilidade total e dá ao cliente o controle completo sobre os custos diretos de cada serviço.</p>
+        <p>Se a parceria com a Kunlatek terminar por qualquer motivo, o cliente permanece com toda a infraestrutura, todos os dados e todas as credenciais.</p>
+      </section>
+
+      <section id="criptografia">
+        <h2><span class="num">07</span> Criptografia e proteção em trânsito e em repouso</h2>
+        <p>Aplicamos criptografia em todas as camadas da operação:</p>
+        <ul>
+          <li><strong>Trânsito titular ↔ Meta:</strong> criptografia ponta a ponta nativa do WhatsApp.</li>
+          <li><strong>Trânsito Meta ↔ Kunlatalk:</strong> TLS 1.2+ obrigatório nas chamadas à Cloud API oficial.</li>
+          <li><strong>Trânsito Kunlatalk ↔ DeepSeek:</strong> TLS 1.2+ em todas as chamadas à API de inferência.</li>
+          <li><strong>Trânsito Kunlatalk ↔ MongoDB:</strong> TLS 1.2+ obrigatório em todas as conexões ao banco.</li>
+          <li><strong>Repouso no MongoDB:</strong> AES-256 nativo do MongoDB Atlas.</li>
+          <li><strong>Credenciais e segredos:</strong> chaves de API e tokens armazenados em vaults com criptografia em repouso e rotacionados quando necessário.</li>
+        </ul>
+      </section>
+
+      <section id="acesso">
+        <h2><span class="num">08</span> Controle de acesso e autenticação</h2>
+        <p>O acesso aos sistemas e dados da Kunlatalk segue o princípio do menor privilégio:</p>
+        <ul>
+          <li><strong>Acessos administrativos da Kunlatek</strong> à infraestrutura do cliente são concedidos sob permissões específicas e auditáveis no Meta Business Manager, MongoDB Atlas e plataforma DeepSeek. O cliente pode revogar a qualquer momento.</li>
+          <li><strong>Autenticação multifator (MFA)</strong> é obrigatória para todas as pessoas com acesso a sistemas administrativos.</li>
+          <li><strong>Princípio do menor privilégio</strong> aplicado a todos os papéis: cada pessoa recebe apenas o nível de acesso necessário para a sua função.</li>
+          <li><strong>Acessos ao Administrado</strong> são individuais, com gestão de papéis e permissões granulares por módulo.</li>
+          <li><strong>Senhas</strong> são armazenadas exclusivamente como hashes com salt, usando algoritmos modernos (bcrypt ou equivalente).</li>
+          <li><strong>Revogação imediata</strong> de acessos quando colaboradores ou parceiros deixam de atuar no projeto.</li>
+        </ul>
+      </section>
+
+      <section id="retencao">
+        <h2><span class="num">09</span> Retenção e exclusão de dados</h2>
+        <p>A política de retenção da Kunlatalk segue o que está definido na <a href="/privacidade">Política de Privacidade</a>. Em resumo:</p>
+        <ul>
+          <li><strong>Histórico de conversas:</strong> mantido pelo período definido pela empresa contratante (Controladora), respeitados os prazos mínimos da LGPD e regulações setoriais aplicáveis.</li>
+          <li><strong>Dados de leads e clientes:</strong> conforme a finalidade e a base legal de tratamento. Em geral, enquanto durar a relação comercial mais o prazo de prescrição legal.</li>
+          <li><strong>Logs operacionais e de auditoria:</strong> retidos pelo tempo necessário para investigação de incidentes e cumprimento de obrigações regulatórias.</li>
+          <li><strong>Exclusão sob solicitação do titular:</strong> processada conforme os direitos garantidos pela LGPD (art. 18). Solicitações podem ser feitas diretamente à empresa contratante ou subsidiariamente à Kunlatek.</li>
+          <li><strong>Anonimização:</strong> quando juridicamente possível, dados são anonimizados em vez de excluídos para preservar análises estatísticas agregadas.</li>
+        </ul>
+      </section>
+
+      <section id="monitoramento">
+        <h2><span class="num">10</span> Monitoramento e auditoria</h2>
+        <p>Mantemos logs e monitoramento contínuo para detectar anomalias e suportar investigações:</p>
+        <ul>
+          <li><strong>Logs de aplicação</strong> registrando eventos relevantes da operação da atendente — sem armazenar conteúdo sensível em texto plano nos logs.</li>
+          <li><strong>Logs de acesso administrativo</strong> à plataforma Administrado, com rastreabilidade de quem fez o quê e quando.</li>
+          <li><strong>Logs do MongoDB Atlas</strong> incluindo conexões, alterações de configuração e operações administrativas, retidos conforme a política de auditoria.</li>
+          <li><strong>Monitoramento de uso da API Meta</strong> para detectar padrões anômalos que possam indicar abuso ou comprometimento da conta.</li>
+          <li><strong>Monitoramento de custos</strong> nos provedores DeepSeek e MongoDB, com alertas configuráveis para variações inesperadas.</li>
+        </ul>
+      </section>
+
+      <section id="incidentes">
+        <h2><span class="num">11</span> Resposta a incidentes</h2>
+        <p>Em caso de incidente de segurança que envolva dados pessoais, seguimos um processo estruturado de resposta:</p>
+        <ol>
+          <li><strong>Detecção e contenção:</strong> identificação do incidente, isolamento dos sistemas afetados e contenção do escopo.</li>
+          <li><strong>Avaliação de impacto:</strong> análise do que foi exposto, por quanto tempo, e quantos titulares foram potencialmente afetados.</li>
+          <li><strong>Notificação à Controladora:</strong> comunicação imediata à empresa contratante, com todas as informações necessárias para que ela possa cumprir suas obrigações legais.</li>
+          <li><strong>Notificação à ANPD e aos titulares</strong> quando o incidente puder acarretar risco ou dano relevante, conforme o art. 48 da LGPD. A notificação aos titulares e à ANPD é responsabilidade da Controladora; a Kunlatek presta todo o suporte técnico necessário.</li>
+          <li><strong>Correção e prevenção:</strong> implementação de medidas corretivas para evitar a repetição do incidente, com documentação completa do aprendizado.</li>
+        </ol>
+        <p>Mantemos um canal interno priorizado para tratamento de incidentes, acionável 24 horas por dia, 7 dias por semana, durante operação ativa.</p>
+      </section>
+
+      <section id="vulnerabilidades">
+        <h2><span class="num">12</span> Comunicação de vulnerabilidades</h2>
+        <p>Se você identificou uma vulnerabilidade de segurança em algum sistema operado pela Kunlatek, pedimos que entre em contato pelos canais abaixo antes de divulgar publicamente:</p>
+        <ul>
+          <li><strong>E-mail prioritário:</strong> <a href="mailto:contato@kunlatek.com">contato@kunlatek.com</a> com o assunto "Vulnerabilidade de segurança".</li>
+          <li>Forneça detalhes técnicos suficientes para reprodução do problema, e um meio de contato para retorno.</li>
+          <li>Comprometemo-nos a responder em até 5 dias úteis e a manter você informado sobre o tratamento da vulnerabilidade.</li>
+          <li>Não tomamos medidas legais contra pesquisadores que reportem vulnerabilidades de forma responsável, agindo de boa-fé e sem causar danos à operação ou aos dados.</li>
+        </ul>
+      </section>
+
+      <section id="contato">
+        <h2><span class="num">13</span> Contato do time de segurança</h2>
+        <p>Para questões relacionadas a segurança da informação, conformidade ou tratamento de dados:</p>
+        <ul>
+          <li><strong>E-mail:</strong> <a href="mailto:contato@kunlatek.com">contato@kunlatek.com</a></li>
+          <li><strong>Encarregado (DPO):</strong> conforme indicado na <a href="/privacidade">Política de Privacidade</a></li>
+        </ul>
+        <p>Para dúvidas comerciais, o canal mais rápido é o <a href="https://wa.me/5582936180690" target="_blank" rel="noopener">WhatsApp</a>. Mas para tudo o que envolve segurança ou tratamento de dados, preferimos o e-mail — é rastreável, formal e respeita os requisitos da LGPD.</p>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== CTA FINAL =================== -->
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Dúvidas sobre segurança?</h2>
+      <p>Nossa equipe está à disposição para esclarecer qualquer ponto técnico sobre a infraestrutura e os controles da Kunlatalk.</p>
+      <a href="mailto:contato@kunlatek.com" class="btn-cta-light">
+        Falar com a equipe
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
