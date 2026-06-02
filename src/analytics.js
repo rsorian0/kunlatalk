@@ -7,7 +7,7 @@ export const PIXEL_ID = null; // <- quando houver Pixel, coloque o ID e implemen
 
 // Versão da política. Ao alterar a Política de Privacidade, incremente esta data:
 // isso invalida consentimentos antigos e reabre o banner para o usuário reconfirmar.
-export const POLICY_VERSION = '2026-06-01';
+export const POLICY_VERSION = '2026-06-02';
 
 const KEY = 'kunlatalk_consent';
 let gaLoaded = false;
