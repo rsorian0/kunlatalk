@@ -158,6 +158,7 @@
     border-radius:999px;
     font-size:14px;
     font-weight:600;
+    text-decoration:none;
     transition:all .25s;
     box-shadow:0 6px 16px -6px rgba(71,17,203,0.5);
   }
