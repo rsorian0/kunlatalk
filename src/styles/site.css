@@ -3897,3 +3897,7 @@
 @media(min-width:881px){
   .nav-mobile{display:none}
 }
+
+/* Compensa a altura da nav fixa em qualquer rolagem para âncora */
+html{ scroll-padding-top:100px }
+.content section{ scroll-margin-top:0 }
