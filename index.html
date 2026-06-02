@@ -43,6 +43,35 @@
     }
   }(window.location));
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kunlatalk.com.br/#organization",
+      "name": "Kunlatek",
+      "url": "https://kunlatalk.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kunlatalk.com.br/og-image.png"
+      },
+      "sameAs": [
+        "https://www.instagram.com/kunlatalk/",
+        "https://www.youtube.com/@Kunlatalk"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://kunlatalk.com.br/#service",
+      "name": "Kunlatalk",
+      "description": "Atendentes de IA com nome, rosto e personalidade próprios da sua marca para WhatsApp.",
+      "provider": { "@id": "https://kunlatalk.com.br/#organization" },
+      "url": "https://kunlatalk.com.br/"
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <div id="root"></div>
