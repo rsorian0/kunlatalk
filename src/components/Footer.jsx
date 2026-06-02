@@ -51,7 +51,6 @@ export default function Footer() {
               <li><Link to="/#produto">Personalização</Link></li>
               <li><Link to="/#capacidades">Capacidades</Link></li>
               <li><Link to="/#publico">Para quem</Link></li>
-              <li><a href="/#faq">FAQ</a></li>
             </ul>
           </div>
 
@@ -60,8 +59,7 @@ export default function Footer() {
             <ul>
               <li><Link to="/sobre">Sobre a Kunlatek</Link></li>
               <li><a href={WHATSAPP_DEMO} target="_blank" rel="noopener">Demonstração</a></li>
-              <li><a href="mailto:contato@kunlatek.com">contato@kunlatek.com</a></li>
-              <li><a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href={WHATSAPP} target="_blank" rel="noopener">Contato</a></li>
             </ul>
           </div>
 
