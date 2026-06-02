@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import BrandLogo from './BrandLogo.jsx';
 import KunlatekLogo from './KunlatekLogo.jsx';
 import SocialIcon from './SocialIcon.jsx';
+import { trackEvent } from '../analytics.js';
 
 const WHATSAPP = 'https://wa.me/5582936180690';
 const WHATSAPP_DEMO =
@@ -58,8 +59,10 @@ export default function Footer() {
             <h5>Empresa</h5>
             <ul>
               <li><Link to="/sobre">Sobre a Kunlatek</Link></li>
-              <li><a href={WHATSAPP_DEMO} target="_blank" rel="noopener">Demonstração</a></li>
-              <li><a href={WHATSAPP} target="_blank" rel="noopener">Contato</a></li>
+              <li><a href={WHATSAPP_DEMO} target="_blank" rel="noopener"
+                onClick={() => trackEvent('contato_whatsapp', { origem: 'footer' })}>Demonstração</a></li>
+              <li><a href={WHATSAPP} target="_blank" rel="noopener"
+                onClick={() => trackEvent('contato_whatsapp', { origem: 'footer' })}>Contato</a></li>
             </ul>
           </div>
 

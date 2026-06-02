@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav.jsx';
 import Footer from './components/Footer.jsx';
 import ScrollManager from './components/ScrollManager.jsx';
+import ConsentBanner from './components/ConsentBanner.jsx';
 import Landing from './pages/Landing.jsx';
 import Sobre from './pages/Sobre.jsx';
 import Privacidade from './pages/Privacidade.jsx';
@@ -25,6 +26,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <ConsentBanner />
     </>
   );
 }

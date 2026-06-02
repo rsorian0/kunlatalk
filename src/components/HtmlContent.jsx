@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { trackEvent } from '../analytics.js';
 
 // Renderiza o conteudo (HTML fiel ao original) e adiciona o comportamento
 // que antes vinha dos <script>: animacoes .reveal via IntersectionObserver,
@@ -38,6 +39,11 @@ export default function HtmlContent({ html, onOpenVideo }) {
       const link = e.target.closest('a');
       if (!link) return;
       const href = link.getAttribute('href') || '';
+      if (href.includes('wa.me')) {
+        trackEvent('contato_whatsapp', {
+          origem: link.closest('section')?.className?.split(' ')[0] || 'conteudo',
+        });
+      }
       const targetBlank = link.getAttribute('target') === '_blank';
       // links internos (rota) -> React Router, sem recarregar a pagina
       const isInternal = href.startsWith('/') && !href.startsWith('//') && !targetBlank;

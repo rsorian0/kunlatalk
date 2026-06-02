@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { trackPageView } from '../analytics.js';
 
 // Em troca de rota: rola para o topo.
 // Quando a URL tem hash (ex.: /#produto), rola suavemente ate o elemento.
@@ -22,6 +23,7 @@ export default function ScrollManager() {
     } else {
       window.scrollTo(0, 0);
     }
+    trackPageView(pathname + hash);
   }, [pathname, hash]);
 
   return null;
