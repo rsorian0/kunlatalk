@@ -120,8 +120,8 @@
   @media(max-width:720px){
     nav{padding:10px 16px}
     nav.scrolled{padding:8px 16px}
-    nav .logo-mark{height:96px;margin:-26px 0}
-    nav.scrolled .logo-mark{height:84px;margin:-24px 0}
+    nav .logo-mark{height:110px;margin:-30px 0}
+    nav.scrolled .logo-mark{height:96px;margin:-26px 0}
     nav .cta-nav,
     nav .nav-links a.cta-nav{
       padding:9px 16px;
@@ -129,8 +129,8 @@
     }
   }
   @media(max-width:420px){
-    nav .logo-mark{height:80px;margin:-22px 0}
-    nav.scrolled .logo-mark{height:72px;margin:-20px 0}
+    nav .logo-mark{height:92px;margin:-25px 0}
+    nav.scrolled .logo-mark{height:80px;margin:-22px 0}
     nav .cta-nav,
     nav .nav-links a.cta-nav{
       padding:8px 14px;
