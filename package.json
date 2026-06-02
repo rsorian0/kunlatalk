@@ -6,7 +6,7 @@
   "description": "Site institucional da Kunlatalk em React + Vite.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/inject-meta.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
