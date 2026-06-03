@@ -6,8 +6,8 @@ import html from '../content/landing.html?raw';
 
 export default function Landing() {
   usePageMeta(
-    'Kunlatalk — Atendentes de IA com a identidade da sua marca',
-    'A Kunlatalk cria atendentes de IA com nome, rosto e personalidade próprios da sua marca. Vende, atende e fideliza pelo WhatsApp — 24 horas por dia.'
+    'Kunlatalk - Atendentes de IA com a identidade da sua marca',
+    'A Kunlatalk cria atendentes de IA com nome, rosto e personalidade próprios da sua marca. Vende, atende e fideliza pelo WhatsApp - 24 horas por dia.'
   );
 
   const [videoOpen, setVideoOpen] = useState(false);
