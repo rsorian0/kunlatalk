@@ -42,7 +42,15 @@ export default function Footer() {
             </div>
             <div className="kunlatek-signature">
               <span className="signature-label">Um produto</span>
-              <KunlatekLogo className="kunlatek-logo" />
+              <a
+                href="https://kunlatek.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar o site da Kunlatek"
+                className="kunlatek-logo-link"
+              >
+                <KunlatekLogo className="kunlatek-logo" />
+              </a>
             </div>
           </div>
 

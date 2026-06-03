@@ -967,6 +967,12 @@
     height:38px;
     width:auto;
   }
+  .kunlatek-logo-link{
+    display:inline-flex;
+    align-items:center;
+    transition:opacity .2s ease;
+  }
+  .kunlatek-logo-link:hover{opacity:.7}
   @media(max-width:760px){
     .kunlatek-logo{height:32px}
   }
