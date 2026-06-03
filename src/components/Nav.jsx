@@ -42,7 +42,7 @@ export default function Nav() {
           <BrandLogo className="logo-mark" fill="#4711cb" />
         </Link>
 
-        {/* Links — visíveis só no desktop */}
+        {/* Links - visíveis só no desktop */}
         <div className="nav-links">
           <Link to="/#produto">Produto</Link>
           <Link to="/#capacidades">Capacidades</Link>
@@ -53,7 +53,7 @@ export default function Nav() {
           </a>
         </div>
 
-        {/* Ações mobile — CTA sempre visível + hambúrguer */}
+        {/* Ações mobile - CTA sempre visível + hambúrguer */}
         <div className="nav-mobile-actions">
           <a href={WHATSAPP_DEMO} className="cta-nav" target="_blank" rel="noopener"
             onClick={() => trackEvent('contato_whatsapp', { origem: 'nav' })}>

@@ -73,10 +73,10 @@
         <p class="lead">Segurança não é uma camada que adicionamos no fim. É um critério arquitetural que orienta todas as decisões da Kunlatalk desde a primeira linha de código.</p>
         <p>Operamos sobre quatro princípios:</p>
         <ul>
-          <li><strong>Soberania do cliente.</strong> Dados, infraestrutura e credenciais ficam sob titularidade direta do cliente — não sob a nossa.</li>
+          <li><strong>Soberania do cliente.</strong> Dados, infraestrutura e credenciais ficam sob titularidade direta do cliente, não sob a nossa.</li>
           <li><strong>Provedores homologados.</strong> Usamos exclusivamente APIs oficiais (Meta, DeepSeek, MongoDB). Sem soluções não-homologadas, sem gambiarras, sem riscos de bloqueio.</li>
           <li><strong>Princípio do menor privilégio.</strong> Cada componente, integração e pessoa só acessa o estritamente necessário para sua função.</li>
-          <li><strong>Defesa em profundidade.</strong> Múltiplas camadas independentes de proteção — para que a falha em uma não comprometa o conjunto.</li>
+          <li><strong>Defesa em profundidade.</strong> Múltiplas camadas independentes de proteção: para que a falha em uma não comprometa o conjunto.</li>
         </ul>
       </section>
 
@@ -111,7 +111,7 @@
             </tbody>
           </table>
         </div>
-        <p>Cada provedor mantém certificações e controles próprios. Atuamos como integradora — não substituímos nem reempacotamos esses serviços. O cliente final mantém relação contratual direta com cada fornecedor.</p>
+        <p>Cada provedor mantém certificações e controles próprios. Atuamos como integradora, não substituímos nem reempacotamos esses serviços. O cliente final mantém relação contratual direta com cada fornecedor.</p>
       </section>
 
       <section id="meta">
@@ -120,7 +120,7 @@
         <p>O que isso garante na prática:</p>
         <ul>
           <li><strong>Criptografia ponta a ponta nativa</strong> entre o titular e a infraestrutura Meta para todas as mensagens em trânsito.</li>
-          <li><strong>Conformidade com as Políticas Comerciais do WhatsApp</strong>, garantindo que a conta opera dentro das regras da plataforma — sem risco de bloqueio por uso não autorizado.</li>
+          <li><strong>Conformidade com as Políticas Comerciais do WhatsApp</strong>, garantindo que a conta opera dentro das regras da plataforma, sem risco de bloqueio por uso não autorizado.</li>
           <li><strong>Aderência à Política de Mensagens Comerciais</strong> e aos Termos da WhatsApp Business Solution.</li>
           <li><strong>Sem soluções não-homologadas</strong>: não usamos automações via WhatsApp Web, web scraping ou qualquer outra técnica que viole os termos da plataforma.</li>
         </ul>
@@ -132,7 +132,7 @@
         <p>A inteligência conversacional da atendente é fornecida pelo <strong>DeepSeek</strong>, acessado via API oficial. Não treinamos modelos com dados de clientes, e não enviamos dados para terceiros além do necessário para produzir cada resposta.</p>
         <p>Sobre o uso:</p>
         <ul>
-          <li>As chamadas à API DeepSeek são feitas <strong>sob a conta do próprio cliente</strong> — sem markup, sem intermediação financeira da Kunlatek.</li>
+          <li>As chamadas à API DeepSeek são feitas <strong>sob a conta do próprio cliente</strong>, sem markup, sem intermediação financeira da Kunlatek.</li>
           <li>O contexto enviado em cada interação é o estritamente necessário para a próxima resposta da atendente. Não enviamos dados de outros clientes, históricos não relacionados ou informações sensíveis fora de contexto.</li>
           <li>O cliente pode auditar diretamente o consumo e o tráfego de sua conta DeepSeek.</li>
           <li>Trocas de provedor de IA são tecnicamente possíveis caso o cliente prefira outra opção. O DeepSeek é o padrão por seu equilíbrio entre custo e qualidade em português.</li>
@@ -141,10 +141,10 @@
 
       <section id="mongodb">
         <h2><span class="num">05</span> MongoDB como camada de dados</h2>
-        <p>Histórico de conversas, configuração da atendente, cadastros de leads e dados operacionais ficam armazenados em <strong>MongoDB</strong>, configurado sob a conta do cliente — tipicamente no MongoDB Atlas em região geográfica escolhida pelo cliente.</p>
+        <p>Histórico de conversas, configuração da atendente, cadastros de leads e dados operacionais ficam armazenados em <strong>MongoDB</strong>, configurado sob a conta do cliente, tipicamente no MongoDB Atlas em região geográfica escolhida pelo cliente.</p>
         <p>Características principais:</p>
         <ul>
-          <li><strong>Titularidade direta:</strong> a instância MongoDB é provisionada e contratada em nome do cliente. A Kunlatek apenas configura o esquema, mantém a integração e ajuda na operação — mas o banco pertence ao cliente.</li>
+          <li><strong>Titularidade direta:</strong> a instância MongoDB é provisionada e contratada em nome do cliente. A Kunlatek apenas configura o esquema, mantém a integração e ajuda na operação, mas o banco pertence ao cliente.</li>
           <li><strong>Criptografia em repouso:</strong> todos os dados são criptografados em disco pelo próprio MongoDB Atlas, usando AES-256.</li>
           <li><strong>Criptografia em trânsito:</strong> todas as conexões com o banco usam TLS 1.2 ou superior.</li>
           <li><strong>Backups automáticos:</strong> snapshots periódicos configurados conforme a política de backup escolhida pelo cliente.</li>
@@ -161,7 +161,7 @@
           <li>A conta DeepSeek e a respectiva chave de API.</li>
           <li>A conta MongoDB Atlas e a instância de banco de dados.</li>
         </ul>
-        <p>A Kunlatek atua como integradora técnica, configurando a infraestrutura e mantendo a operação — mas sem se interpor entre o cliente e seus fornecedores. Isso elimina riscos de aprisionamento, garante auditabilidade total e dá ao cliente o controle completo sobre os custos diretos de cada serviço.</p>
+        <p>A Kunlatek atua como integradora técnica, configurando a infraestrutura e mantendo a operação, sem se interpor entre o cliente e seus fornecedores. Isso elimina riscos de aprisionamento, garante auditabilidade total e dá ao cliente o controle completo sobre os custos diretos de cada serviço.</p>
         <p>Se a parceria com a Kunlatek terminar por qualquer motivo, o cliente permanece com toda a infraestrutura, todos os dados e todas as credenciais.</p>
       </section>
 
@@ -207,7 +207,7 @@
         <h2><span class="num">10</span> Monitoramento e auditoria</h2>
         <p>Mantemos logs e monitoramento contínuo para detectar anomalias e suportar investigações:</p>
         <ul>
-          <li><strong>Logs de aplicação</strong> registrando eventos relevantes da operação da atendente — sem armazenar conteúdo sensível em texto plano nos logs.</li>
+          <li><strong>Logs de aplicação</strong> registrando eventos relevantes da operação da atendente, sem armazenar conteúdo sensível em texto plano nos logs.</li>
           <li><strong>Logs de acesso administrativo</strong> à plataforma Administrado, com rastreabilidade de quem fez o quê e quando.</li>
           <li><strong>Logs do MongoDB Atlas</strong> incluindo conexões, alterações de configuração e operações administrativas, retidos conforme a política de auditoria.</li>
           <li><strong>Monitoramento de uso da API Meta</strong> para detectar padrões anômalos que possam indicar abuso ou comprometimento da conta.</li>

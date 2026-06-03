@@ -1,4 +1,4 @@
-// Logotipo Kunlatalk — gerado fielmente a partir do SVG original.
+// Logotipo Kunlatalk - gerado fielmente a partir do SVG original.
 export default function BrandLogo({ className = '', fill = '#4711cb', title = 'Kunlatalk' }) {
   return (
     <svg

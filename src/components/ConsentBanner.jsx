@@ -42,7 +42,7 @@ const CATS = [
   { key: 'necessarios', title: 'Necessários', icon: ICONS.lock, locked: true,
     desc: 'Essenciais para o site funcionar. Sempre ativos.' },
   { key: 'estatisticas', title: 'Estatísticas', icon: ICONS.chart,
-    desc: 'Google Analytics — mede acessos e ajuda a melhorar o site.' },
+    desc: 'Google Analytics: mede acessos e ajuda a melhorar o site.' },
   { key: 'marketing', title: 'Marketing', icon: ICONS.speaker, soon: true,
     desc: 'Anúncios e remarketing (ex.: Meta Pixel), quando ativarmos.' },
 ];

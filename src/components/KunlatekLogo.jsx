@@ -1,4 +1,4 @@
-// Assinatura "Kunlatek" do rodape — gerado a partir do SVG original.
+// Assinatura "Kunlatek" do rodape - gerado a partir do SVG original.
 export default function KunlatekLogo({ className = 'kunlatek-logo' }) {
   return (
     <svg
