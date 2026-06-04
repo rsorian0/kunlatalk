@@ -798,9 +798,14 @@
     box-shadow:0 20px 40px -20px rgba(71,17,203,0.15);
   }
   .who-emoji{
-    font-size:32px;
+    color:var(--violet);
     margin-bottom:20px;
     display:block;
+    line-height:0;
+  }
+  .who-emoji svg{
+    width:30px;
+    height:30px;
   }
   .who-card h4{
     font-size:1.2rem;
@@ -1649,7 +1654,8 @@
     border-color:var(--violet);
     transform:translateY(-3px);
   }
-  .nicho-emoji{font-size:2.2rem;display:block;margin-bottom:18px;line-height:1}
+  .nicho-emoji{color:var(--violet);display:block;margin-bottom:18px;line-height:0}
+  .nicho-emoji svg{width:34px;height:34px}
   .nicho h4{font-size:1.15rem;margin-bottom:10px;letter-spacing:-0.01em}
   .nicho p{color:var(--muted);font-size:0.95rem;line-height:1.55}
 
