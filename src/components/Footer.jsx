@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 Kunlatek. Todos os direitos reservados.</span>
+          <span>© 2026 Kunlatalk. Todos os direitos reservados. · Kunlatek Tecnologia LTDA · CNPJ 36.899.179/0001-08</span>
           <span>Feito no Brasil 🇧🇷</span>
         </div>
       </div>
